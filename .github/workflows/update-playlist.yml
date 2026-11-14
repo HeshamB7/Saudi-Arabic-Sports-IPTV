@@ -31,7 +31,7 @@ jobs:
         run: python scripts/merge_playlists.py
       - name: Commit updated playlist
         run: |
-          if git diff --quiet -- playlist.m3u; then
+          if [ -z "$(git status --porcelain -- playlist.m3u)" ]; then
             echo "Playlist is already up to date."
             exit 0
           fi
