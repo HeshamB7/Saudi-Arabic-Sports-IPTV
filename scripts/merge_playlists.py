@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Merge the three iptv-org public playlists and remove duplicate channel names."""
+"""Merge the three iptv-org public playlists and remove duplicate channel names.
+Updated on repository initialization to trigger the first build.
+"""
 from __future__ import annotations
 
 import re
